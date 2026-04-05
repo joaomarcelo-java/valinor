@@ -1,0 +1,17 @@
+<div class="sidebar">
+    <div class="sidebar-header">
+        <h2>Boards</h2>
+        <button (click)="createBoard()">+</button>
+    </div>
+    <ul class="board-list">
+        @for (board of boards; track board.id){
+        <li [class.active]="board.id === selectedBoardId" (click)="selectBoard(board.id)">
+            <span class="board-title">{{ board.title }}</span>
+            
+            <button class="btn-delete-board" (click)="deleteBoard(board.id); $event.stopPropagation()">
+                &times;
+            </button>
+        </li>
+        }
+    </ul>
+</div>

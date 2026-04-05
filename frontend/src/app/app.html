@@ -1,0 +1,5 @@
+<!-- app.html -->
+<div class="app-container">
+  <app-sidebar (boardSelected)="onBoardSelected($event)" (boardDeleted)="onBoardDeleted()"></app-sidebar>
+  <app-board [boardId]="selectedBoardId"></app-board>
+</div>

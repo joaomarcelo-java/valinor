@@ -1,0 +1,25 @@
+<div class="board" *ngIf="board">
+    <div class="board-header">
+        <h1>{{ board.title }}</h1>
+        <button (click)="createColumn()">Adicione uma Coluna!</button>
+    </div>
+
+    <div class="board-columns" 
+         cdkDropList 
+         cdkDropListOrientation="horizontal" 
+         [cdkDropListData]="board.columns"
+         (cdkDropListDropped)="dropColumn($event)">
+        
+        @for (column of board.columns; track column.id){
+            <app-column 
+                cdkDrag 
+                [cdkDragData]="column" 
+                [column]="column" 
+                [boardId]="board.id"
+                [allColumnIds]="getIds()"
+                (columnDeleted)="loadBoard()" 
+                (columnChanged)="loadBoard()">
+            </app-column>
+        }
+    </div>
+</div>

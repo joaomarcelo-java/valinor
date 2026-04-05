@@ -1,0 +1,82 @@
+.task-card {
+  background-color: #ffffff;
+  border-radius: 8px; 
+  padding: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e8e8e4;
+  transition: all 0.2s ease;
+  cursor: grab;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; 
+}
+
+.task-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: #d0d0cc;
+}
+
+.task-card:active {
+  cursor: grabbing;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.task-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  word-break: break-word;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.task-date {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #888;
+  background-color: #f1f1ef; 
+  padding: 2px 8px;
+  border-radius: 4px;
+  width: fit-content; 
+}
+
+.task-actions {
+  display: flex;
+  gap: 2px;
+  opacity: 0; 
+  transition: opacity 0.2s;
+}
+
+.task-card:hover .task-actions {
+  opacity: 1; 
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px 4px;
+  font-size: 14px;
+  color: #aaa;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.delete:hover { color: #ff5252; background: #ffebee; border-radius: 4px; }
+.edit:hover { color: #1e88e5; background: #e3f2fd; border-radius: 4px; }
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}

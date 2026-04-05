@@ -1,0 +1,34 @@
+<div class="column">
+    <div class="column-header" cdkDragHandle>
+        <h3>{{column.title}}</h3>
+        <div class="column-actions">
+            <button class="btn-edit" (click)="editColumn()" title="Editar Coluna">&#9998;</button>
+            <button class="btn-delete" (click)="deleteColumn()" title="Excluir Coluna">&times;</button>
+        </div>
+    </div>
+
+    <div class="column-tasks"
+         [id]="column.id"
+         cdkDropList
+         [cdkDropListData]="column.tasks"
+         [cdkDropListConnectedTo]="allColumnIds"
+         (cdkDropListDropped)="dropTask($event)">
+        
+        @for (task of column.tasks; track task.id){
+            <app-task 
+                cdkDrag 
+                [cdkDragData]="task"
+                [task]="task" 
+                [boardId]="boardId" 
+                [columnId]="column.id" 
+                (mousedown)="$event.stopPropagation()"
+                (deletedTask)="onColumnChanged()" 
+                (taskChanged)="onColumnChanged()">
+            </app-task>
+        }
+    </div>
+
+    <button class="add-task-btn" (click)="createTask()">
+        <span>+</span> Adicionar Tarefa
+    </button>
+</div>
