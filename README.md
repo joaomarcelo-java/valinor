@@ -2,6 +2,7 @@
 
 Aplicação de gerenciamento de tarefas no estilo Kanban, com suporte a múltiplos boards, drag-and-drop e persistência total de dados.
 
+Vídeo demonstrativo: https://jam.dev/c/7802a104-143e-48d4-8cec-54754580b738
 ---
 
 ## ✨ Funcionalidades
