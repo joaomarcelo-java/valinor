@@ -198,7 +198,7 @@ Estética minimalista inspirada no Notion — off-whites (`#f7f7f5`), bordas sut
 
 ```bash
 git clone https://github.com/seu-usuario/kanban.git
-cd valinor
+cd valinor/backend
 ```
 
 ### 2. Configure o `docker-compose.yml`
@@ -215,6 +215,9 @@ services:
       POSTGRES_DB: kanban
     ports:
       - "5432:5432"
+volumes:
+  postgres_data:
+  
 ```
 
 > Dados de exemplo — altere as credenciais se necessário.
