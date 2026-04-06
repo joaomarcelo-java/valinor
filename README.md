@@ -2,7 +2,6 @@
 
 Aplicação de gerenciamento de tarefas no estilo Kanban, com suporte a múltiplos boards, drag-and-drop e persistência total de dados.
 
-Vídeo demonstrativo: https://jam.dev/c/7802a104-143e-48d4-8cec-54754580b738
 ---
 
 ## ✨ Funcionalidades
@@ -296,3 +295,5 @@ npm run test:cov
 A necessidade de trabalhar com ordenação de colunas e tasks, mantendo esse estado persistido no banco, trouxe novas formas de pensar sobre adaptabilidade e consistência de dados. Garantir que a ordem refletida na interface seja sempre a mesma após um recarregamento exigiu cuidado no design do schema e na lógica dos services de reordenação, indo além de um CRUD tradicional.
 
 Implementar o reorder seja em columns ou tasks, foi um exercício mental que me fez pensar além da simples persistência. Quando editamos a ordem de uma coluna ou task, as outras também mudam de lugar. Conseguir implementar essa lógica e ver funcionando foi muito recompensador.
+
+Vídeo demonstrativo: https://jam.dev/c/7802a104-143e-48d4-8cec-54754580b738
