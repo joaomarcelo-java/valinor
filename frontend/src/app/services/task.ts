@@ -34,7 +34,7 @@ export class TaskService {
 
 reorder(boardId: string, dto: ReorderTask) {
   return this.http.patch(
-    `http://localhost:3000/boards/${boardId}/columns/${dto.fromColumnId}/tasks/reorder`,
+    `https://valinor-2czm.onrender.com/boards/${boardId}/columns/${dto.fromColumnId}/tasks/reorder`,
     dto
   );
 }
