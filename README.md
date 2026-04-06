@@ -1,230 +1,297 @@
-👨‍💻 Vaga para apaixonados por criação de software
-===========================================
+# 📋 Desafio Kanban — FieldControl
 
-A empresa
-----------
-
-Somos um [SaaS (Software as a service)](https://pt.wikipedia.org/wiki/Software_como_servi%C3%A7o) para empresas que possuem prestadores de serviços externos.
-
-Entregamos **controle**, **organização** e **melhor relacionamento com o cliente** para empresas de Climatização, Segurança eletrônica, Telecom, Provedores de internet, Montadoras de móveis, Empresas de limpeza, enfim, qualquer empresa que possui uma equipe de campo para realização de serviços.
-
-Nossa missão é melhorar a prestação de serviços no Brasil.
-
-Te convido a conhecer um pouco mais da Field e da nossa **cultura** pelo nosso instagram: [@FieldControl](https://www.instagram.com/fieldcontrol/)
-
-<p>
-  <img src="assets/fielders.jpeg" width="855"/>
-</p>
-
-Origem
-----------
-
-Um ponto importante é que a Field foi fundada por desenvolvedores, só por esse motivo você pode **TER CERTEZA** que aqui as coisas são muito diferentes das empresas tradicionais.
-
-Aqui utilizamos [princípios ágeis](http://www.manifestoagil.com.br/) **DE VERDADE** para criação de software. Veja bem, não estou falando de post its ou reuniões em pé.. E sim de: Pair programming, Continuous Integration, Continuous Deployment e claro, testes automatizados.
-
-Condições
-----------
-- Período: Integral
-- Onde: Qualquer lugar :)
-- Benefícios: Alimentação, Plano de saúde, Seguro de vida, [Pluralsight](https://www.pluralsight.com/), [Alura](https://www.alura.com.br/), [Amazon Books](https://www.amazon.com/books-used-books-textbooks/b?ie=UTF8&node=283155) <3
-
-:house_with_garden: Você pode ler sobre nossa cidade no [G1](http://g1.globo.com/sao-paulo/sao-jose-do-rio-preto-aracatuba/especial-publicitario/prefeitura-de-rio-preto/rio-preto-noticias/noticia/2015/12/rio-preto-e-melhor-cidade-do-estado-e-segunda-do-pais-para-se-viver.html), [Infomoney](http://www.infomoney.com.br/minhas-financas/consumo/noticia/6391352/melhores-cidades-brasil-para-viver-veja-ranking) ou aqui na [Exame](https://exame.com/brasil/o-ranking-do-servico-publico-nas-100-maiores-cidades-do-brasil/).
-
-Trabalhamos com uma boa infraestrutura, nosso hardware é muito bom (você vai ter um notebook f#d@ com ssd e dois monitores :computer: :computer:) e possuímos um ambiente de trabalho agradável:
-
-<p float="left">
-  <img src="assets/field3.jpeg" width="215"/>
-  <img src="assets/field1.jpeg" width="382"/>
-  <img src="assets/field4.jpeg" width="215"/>
-</p>
-
-A empresa não possui hierarquias e você é convidado e desafiado a colaborar com todas as frentes de trabalho. Ou seja, aqui todas sugestões são bem vindas!
-
-Ah, e quando a Field bate meta (quase sempre) o frigobar fica assim:
-
-<p>
-  <img src="assets/frigobar-da-field-quando-meta-eh-batida.jpeg" width="400" />
-</p>
-
-Queremos a cada dia mais flexibilidade e continuar animados a evoluir nossas aplicações.
-
-Nosso trabalho é baseado em autogestão. Só existe uma regra de convivência: É proibido murmurar! Aqui as opiniões são discutidas, resolvidas e sempre chegamos a um consenso para melhorar a nossa convivência. Isso não foi descrito por um gerente de RH e sim por um desenvolvedor de software.
-
-Oportunidade
-----------
-
-Estamos em busca de desenvolvedores **Frontend** FODAS e APAIXONADOS para fazer parte do nosso time de produto.
-
-Na Field, o seu dia-a-dia será repleto de:
-
-```javascript
-[
-  'GitHub & Git <3',
-  'Muito, muito e muito JavaScript',
-  'Object-oriented programming, SOLID Principles & Design Patterns',
-  'Práticas e princípios ágeis (Pair programming, Continuous Integration, Continuous Deployment)',
-  'Testes de software (unitários, integração, e2e..)',
-  'Desafios de escalabilidade',
-  'Desafios de alta disponibilidade',
-  'Micro services e aplicações distribuídas',
-  'Amazon Web Services',
-  'PAAS & Cloud Services',
-  'Serverless apps',
-  'AngularJS, Angular',
-  'REST APIs',
-  'GraphQL APIs',
-  'Material Design',
-  'Open source software'
-]
-```
-
-Nossa stack tecnológica é predominantemente JavaScript, abrangendo Node.js, Single Page Applications (SPA) e Hybrid Mobile Apps.
-
-Acreditamos firmemente que excelentes desenvolvedores são capazes de selecionar a ferramenta mais adequada para cada desafio. Por essa razão, para resolver problemas específicos, recorremos às melhores alternativas disponíveis, o que nos leva a incluir uma pitada de C#, Java e PHP em nossas soluções.
-
-Nossos servidores residem na AWS, onde utilizamos a nuvem como nossa plataforma principal. Temos aplicativos funcionando com Elastic BeanStalk, armazenamento em S3 e arquiteturas serverless com AWS Lambda.
-
-Antes mesmo de avaliar o conhecimento técnico, valorizamos o perfil pessoal dos candidatos. Para nós, a determinação, o interesse e a curiosidade são qualidades essenciais. Se você é alguém proativo, interessado e que busca constantemente aprender, é isso que realmente importa para nós! 😊
+Aplicação de gerenciamento de tarefas no estilo Kanban, com suporte a múltiplos boards, drag-and-drop e persistência total de dados.
 
 ---
 
-## Requisitos Principais
+## ✨ Funcionalidades
 
-🌟 **Sem Ego**: Acreditamos que ninguém é melhor que ninguém e que todos podem aprender uns com os outros. Promovemos um ambiente onde a humildade, o respeito e a abertura para aprender e ensinar são valorizados.
+- **Multi-Board System** — Criação de múltiplos boards (quadros)
+- **Drag and Drop** — Gestão de colunas e tasks arrastando entre elas
+- **Task Tracking** — Criação de tasks com título e data limite de conclusão
+- **Persistência Total** — Ordem das colunas e tasks salva no banco de dados
+- **Interface Minimalista** — Interface clara e simples, inspirada no Notion
 
-📈 **Evolução Contínua**: Encorajamos o crescimento pessoal e profissional de todos os membros da equipe. Estamos comprometidos em fornecer oportunidades de aprendizado e desenvolvimento, permitindo que cada indivíduo evolua constantemente em sua jornada.
+---
 
-🚀 **Proatividade**: Buscamos indivíduos proativos, capazes de antecipar problemas e buscar soluções de forma autônoma.
+## 🛠️ Stack
 
-🔑 **Sentimento de Dono**: Valorizamos profissionais que assumem responsabilidade pelo seu trabalho e estão comprometidos com o sucesso do projeto como se fossem os donos.
+| Camada | Tecnologia |
+|---|---|
+| Frontend | Angular 21 + Angular CDK |
+| Backend | NestJS 10 + Express |
+| ORM | Prisma 6 |
+| Banco de Dados | PostgreSQL + Docker |
+| Linguagem | TypeScript (fullstack) |
+| Testes | Jest + Supertest |
 
-🤝 **Boa Comunicação e Trabalho em Equipe**: Habilidades de comunicação eficaz e colaboração são essenciais para trabalhar de forma eficiente em equipe.
+### Por que cada tecnologia?
 
-💻 **Proficiência em JavaScript e TypeScript**: Experiência sólida em JavaScript e TypeScript, demonstrando habilidade em desenvolver soluções robustas e escaláveis.
+**Backend — NestJS**
+Arquitetura modular facilita a organização em módulos independentes (boards, columns, tasks). Decorators e injeção de dependência tornam o código mais legível e testável.
 
-🎨 **Experiência com CSS e HTML Semântico**: Conhecimento prático em CSS e HTML Semântico para criar interfaces atraentes e acessíveis.
+**Frontend — Angular 21**
+Estrutura sólida para SPAs. O Angular CDK foi utilizado para o drag-and-drop nativo de colunas e tasks, sem bibliotecas externas.
 
-🔧 **Experiência Sólida com Angular e Ionic**: Capacidade comprovada no desenvolvimento com Angular e Ionic, demonstrando habilidade em construir aplicações web e mobile de alta qualidade.
+**ORM — Prisma 6**
+Sintaxe simples com type-safety de ponta a ponta. Queries intuitivas e migrations versionadas facilitam a persistência da ordenação de colunas e tasks.
 
-🖌️ **Familiaridade com Princípios de UX**: Compreensão dos princípios de User Experience (UX) para criar interfaces intuitivas e amigáveis aos usuários.
+**Banco de Dados — PostgreSQL + Docker**
+Robustez relacional com compatibilidade nativa ao Prisma. Via Docker, o ambiente fica isolado e replicável em qualquer máquina.
 
-🌐 **Familiaridade com APIs REST, GraphQL e WebSockets**: Conhecimento em APIs REST, GraphQL e WebSockets para comunicação eficiente entre cliente e servidor.
+**Testes — Jest**
+Testes unitários e e2e no backend. Os testes e2e cobrem o fluxo completo: criação de board, coluna, task e validação de erro em coluna inexistente.
 
-🧪 **Prática em Testar Software**: Experiência prática em testes de software, incluindo testes unitários, integrados e de aceitação, garantindo a qualidade e a confiabilidade do sistema.
+---
 
-Estes requisitos refletem nossa busca por profissionais qualificados e comprometidos, capazes de contribuir de forma significativa para o sucesso de nossos projetos.
+## 🏗️ Arquitetura
 
-O desafio de programação
-----------
+### Banco de Dados
 
-Se você é apaixonado por desenvolvimento de software e busca desafios para impulsionar sua carreira, este teste é para você! Realize o desafio abaixo e faça um fork deste repositório para começar a codificar. [Let the hacking begin](https://www.youtube.com/watch?v=Dvrdxn0kHL8)! 🚀
+```prisma
+model Board {
+  id        String   @id @default(uuid())
+  title     String
+  columns   Column[]
+  createdAt DateTime @default(now())
+}
 
-# Teste de Programação: Kanban
+model Column {
+  id        String   @id @default(uuid())
+  title     String
+  order     Int
+  tasks     Task[]
+  createdAt DateTime @default(now())
+  boardId   String
+  board     Board    @relation(fields: [boardId], references: [id], onDelete: Cascade)
+}
 
-Este é um teste de programação que consiste em implementar um Kanban, utilizando Angular para o client side e NestJs para o back-end. 
+model Task {
+  id          String   @id @default(uuid())
+  title       String
+  order       Int
+  limitDate   DateTime
+  createdAt   DateTime @default(now())
+  columnId    String
+  column      Column   @relation(fields: [columnId], references: [id], onDelete: Cascade)
+}
+```
 
-O objetivo é avaliar a capacidade do candidato em estruturar um projeto seguindo as boas práticas de ambos os frameworks e implementar um fluxo básico de colunas e cards dentro do Kanban.
+### Backend (API) — NestJS
 
-## Critérios de Avaliação
+```
+src/
+├── app.module.ts         # Módulo principal, reúne e inicializa todos os módulos
+├── board/                # Módulo de boards (DTOs, service, controller, module)
+├── column/               # Módulo de columns (+ DTO de reorder)
+└── task/                 # Módulo de tasks (+ DTO de reorder)
+```
 
-Os critérios de avaliação para este teste são os seguintes:
+### Frontend — Angular
 
-1. **Código Limpo e Organização**: Avalia a clareza, legibilidade e organização do código fonte.
+```
+src/app/
+├── components/
+│   ├── board/            # Componente do board (template, estilos, spec)
+│   ├── column/           # Componente de coluna
+│   ├── task/             # Componente de task
+│   └── sidebar/          # Navegação entre boards
+├── models/
+│   ├── board.model.ts
+│   ├── column.model.ts
+│   ├── column-reorder.model.ts
+│   ├── task.model.ts
+│   └── task-reorder.model.ts
+└── services/
+    ├── board.ts           # Comunicação com a API de boards
+    ├── column.ts
+    └── task.ts
+```
 
-2. **Testes de Software**: Serão avaliados os testes unitários e integrados para garantir a robustez do sistema.
+---
 
-3. **Semântica**: A utilização de nomes significativos para variáveis, funções, classes, etc., será observada.
+## 🔌 Endpoints
 
-4. **Documentação do Projeto (README)**: A qualidade e completude da documentação do projeto, que inclui informações sobre como executar, testar e utilizar o sistema.
+### Board
+| Método | Rota | Descrição |
+|---|---|---|
+| `GET` | `/boards` | Lista todos os boards |
+| `GET` | `/boards/:boardId` | Busca um board pelo ID |
+| `POST` | `/boards` | Cria um novo board |
+| `PATCH` | `/boards/:boardId` | Atualiza os dados de um board |
+| `DELETE` | `/boards/:boardId` | Remove um board |
 
-5. **Segurança**: A adoção de práticas de segurança apropriadas, como proteção contra ataques comuns, será considerada.
+### Column
+| Método | Rota | Descrição |
+|---|---|---|
+| `GET` | `/boards/:boardId/columns` | Lista todas as colunas de um board |
+| `GET` | `/boards/:boardId/columns/:id` | Busca uma coluna pelo ID |
+| `POST` | `/boards/:boardId/columns` | Cria uma coluna em um board |
+| `PATCH` | `/boards/:boardId/columns/reorder` | Reordena as colunas dentro de um board |
+| `PATCH` | `/boards/:boardId/columns/:id` | Atualiza os dados de uma coluna |
+| `DELETE` | `/boards/:boardId/columns/:id` | Remove uma coluna |
 
-## Instruções
+### Task
+| Método | Rota | Descrição |
+|---|---|---|
+| `GET` | `/boards/:boardId/columns/:columnId/tasks` | Lista todas as tasks de uma coluna |
+| `GET` | `/boards/:boardId/columns/:columnId/tasks/:id` | Busca uma task pelo ID |
+| `POST` | `/boards/:boardId/columns/:columnId/tasks` | Cria uma task em uma coluna |
+| `PATCH` | `/boards/:boardId/columns/:columnId/tasks/reorder` | Reordena ou move uma task entre colunas |
+| `PATCH` | `/boards/:boardId/columns/:columnId/tasks/:id` | Atualiza os dados de uma task |
+| `DELETE` | `/boards/:boardId/columns/:columnId/tasks/:id` | Remove uma task |
 
-1. Implemente um Kanban básico que permita a criação de colunas e cards.
-2. Utilize Angular para o desenvolvimento do cliente e NestJs para o desenvolvimento do servidor.
-3. Siga as boas práticas de desenvolvimento de software recomendadas pelos frameworks.
-4. Implemente testes unitários e integrados para garantir a qualidade e robustez do sistema.
-5. Documente o projeto de forma clara e completa neste arquivo README.
+---
 
-## Entrega
+## ✅ Validação de Dados
 
-Você deve enviar a resolução do desafio via pull request nesse mesmo repositório ;)
+A validação é feita com `class-validator` e `class-transformer` via `ValidationPipe` global com `whitelist: true` e `forbidNonWhitelisted: true`.
 
-## Estrutura do Projeto
+| DTO | Campo | Regras |
+|---|---|---|
+| Board | `title` | obrigatório, string, 3–50 caracteres, trim automático |
+| Column | `title` | obrigatório, string, 3–50 caracteres, trim automático |
+| Column Reorder | `columnId` | obrigatório, string |
+| Column Reorder | `fromOrder` / `toOrder` | obrigatório, inteiro |
+| Task | `title` | obrigatório, string, 3–50 caracteres, trim automático |
+| Task | `limitDate` | obrigatório, formato ISO 8601 (`IsDateString`) |
+| Task Reorder | `taskId`, `fromColumnId`, `toColumnId` | obrigatório, string |
+| Task Reorder | `fromOrder` / `toOrder` | obrigatório, inteiro, parse automático via `Transform` |
 
-A estrutura do projeto deve seguir as convenções padrão do Angular e do NestJs, com os arquivos de configuração e código-fonte organizados de maneira lógica e intuitiva.
+---
 
-## Observações
+## 🖱️ Drag and Drop — Angular CDK
 
-- Certifique-se de que o código está devidamente comentado e documentado para facilitar a compreensão e manutenção futura.
-- Evite a utilização de bibliotecas ou frameworks que não sejam necessários para a implementação do Kanban básico.
-- Qualquer dúvida ou problema encontrado durante a execução do projeto, entre em contato com os avaliadores.
+A implementação é dividida em dois níveis:
 
-## Referências
+**Reordenação de Colunas**
+O `BoardComponent` define um `cdkDropList` horizontal envolvendo todas as colunas. Cada `<app-column>` recebe `cdkDrag`. Ao soltar, o `dropColumn()`:
+1. Atualiza a ordem visual via `moveItemInArray`
+2. Monta o `ReorderColumnDto` com `columnId`, `fromOrder` e `toOrder`
+3. Persiste a nova ordem no banco via service
 
-### Angular
+**Movimentação de Tasks**
+Cada coluna é um `cdkDropList` conectado às demais via `[cdkDropListConnectedTo]="allColumnIds"`, permitindo mover tasks entre colunas. Ao soltar, o `dropTask()`:
+1. Detecta se é na mesma coluna (`moveItemInArray`) ou entre colunas (`transferArrayItem`)
+2. Monta o `ReorderTaskDto` com `taskId`, `fromColumnId`, `toColumnId`, `fromOrder` e `toOrder`
+3. Persiste a movimentação no banco
 
-- Documentação Oficial do Angular: [Angular Docs](https://angular.io/docs)
-- Repositório do Angular no GitHub: [Angular GitHub](https://github.com/angular/angular)
+**Conflito de Drag**
+O `cdkDragHandle` no header da coluna restringe a área de arrasto. Nas tasks, `(mousedown)="$event.stopPropagation()"` impede que o drag da task acione o da coluna pai.
 
-### NestJs
+---
 
-- Documentação Oficial do NestJs: [NestJs Docs](https://docs.nestjs.com/)
-- Repositório do NestJs no GitHub: [NestJs GitHub](https://github.com/nestjs/nest)
+## 🎨 Interface
 
-Estes recursos fornecem uma base sólida para aprender e se aprofundar nos frameworks Angular e NestJs.
+Estética minimalista inspirada no Notion — off-whites (`#f7f7f5`), bordas sutis (`#e8e8e4`) e textos em cinza escuro. Botões de ação ficam ocultos e aparecem no hover, mantendo a interface limpa. Ações destrutivas recebem feedback em vermelho. Task cards simulam elevação com `box-shadow` no hover e cursor `grab`.
 
-## Para Iniciantes
+---
 
-Se você é um iniciante nesta jornada de desenvolvimento, queremos encorajá-lo a participar deste teste e fazer o seu melhor. Na Field, valorizamos a força de vontade, a iniciativa e o desejo de aprender.
+## 🚀 Como rodar localmente
 
-Não se preocupe se você não conseguir entregar um projeto perfeito ou completo. O objetivo é que você ganhe experiência, aprenda com o processo e se desafie a ir além do que já conhece.
+### Pré-requisitos
+- Node.js instalado
+- Docker Desktop aberto
 
-Aqui estão algumas dicas para ajudá-lo durante o teste:
+### 1. Clone o repositório
 
-1. **Comece com o Básico**: Concentre-se em entender os conceitos fundamentais do Angular e do NestJs. Explore tutoriais, documentações e exemplos de código para se familiarizar com as tecnologias.
+```bash
+git clone https://github.com/seu-usuario/kanban.git
+cd kanban
+```
 
-2. **Divida o Projeto em Etapas**: Em vez de tentar implementar tudo de uma vez, divida o projeto em etapas menores e gerenciáveis. Concentre-se em uma funcionalidade de cada vez e avance gradualmente.
+### 2. Configure o `docker-compose.yml`
 
-3. **Não Tenha Medo de Errar**: O processo de aprendizado envolve tentativa e erro. Não se preocupe com os erros ou obstáculos que encontrar ao longo do caminho. Eles fazem parte do processo e são oportunidades de aprendizado.
+```yaml
+services:
+  db:
+    image: postgres:15
+    container_name: kanban_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: kanban
+    ports:
+      - "5432:5432"
+```
 
-4. **Celebre suas Conquistas**: Cada pequeno progresso é uma conquista. Celebre suas realizações, por menores que sejam, e reconheça o esforço e a dedicação que você está dedicando ao projeto.
+> Dados de exemplo — altere as credenciais se necessário.
 
-Lembre-se, o importante é tentar e aprender durante o processo. Valorizamos sua iniciativa e estamos aqui para apoiá-lo em sua jornada de desenvolvimento. Boa sorte e divirta-se codificando! 🌟
+### 3. Suba o container
 
-## Diferenciais
+```bash
+docker compose up -d
+```
 
-Além dos requisitos básicos do teste, a inclusão dos seguintes diferenciais pode agregar valor ao projeto:
+### 4. Configure e inicie a API
 
-### Aplicação Publicada e Rodando
+```bash
+cd backend
+npm install
+```
 
-- Configurar e publicar a aplicação em um ambiente de hospedagem como Heroku, Netlify, AWS, Azure, etc., para demonstrar a capacidade de implantar e disponibilizar o sistema para uso real.
+No arquivo `.env`:
 
-### Testes Integrados e E2E
+```env
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/kanban"
+```
 
-- Implementar testes integrados e end-to-end (E2E) utilizando ferramentas como Jasmine, Protractor, Jest, etc., para garantir a qualidade e estabilidade do sistema em diferentes níveis de teste.
+```bash
+npx prisma migrate dev
+npm run start:dev
+```
 
-### API em GraphQL ao Invés de REST
+> API disponível em `http://localhost:3000`
 
-- Utilizar GraphQL como interface de programação de aplicativos (API) em vez de REST para oferecer uma forma mais flexível e eficiente de consultar e manipular dados entre o cliente e o servidor.
+### 5. Inicie o Frontend
 
-### Realtime com Socket.io
+Em outro terminal:
 
-- Implementar funcionalidades em tempo real utilizando Socket.io para fornecer uma experiência interativa e dinâmica aos usuários, permitindo atualizações instantâneas e sincronizadas entre os diferentes clientes conectados à aplicação.
+```bash
+cd frontend
+npm install
+npm start
+```
 
-A inclusão destes diferenciais demonstrará uma compreensão mais avançada e a aplicação de tecnologias modernas e práticas de desenvolvimento de software, elevando a qualidade e a experiência do usuário final.
+> Aplicação disponível em `http://localhost:4200`
 
+---
+## 🚀 Como acessar online
+https://kanban-joao-marcelo.netlify.app/
+(Entre no site, aguarde 2 ou 3 minutos e recarregue para funcionar
+o render demora para iniciar.)
 
-Dúvidas?
-----------
-Abra um issue ou me mande um e-mail em **luiz@fieldcontrol.com.br**, fechou? :)
+## 🧪 Como rodar os testes
 
-Gostariamos de entender como você pensa e as decisões que você tomou durante o desenvolvimento. Então, quando for enviar seu pull request, por favor responda:
+Certifique-se de que o container do banco está ativo:
 
-- Qual ferramentas e bibliotecas (libraries, framework, tools etc) você usou
-- Porque você optou pela tecnologia X e não a Y
-- Quais princípios da engenharia de software que você usou?
-- Desafios e problemas que você enfrentou e como você resolveu
-- O que você entende que pode ser melhorado e como fazer isso
+```bash
+docker compose up -d
+```
+
+**Testes unitários**
+```bash
+cd backend
+npm run test
+```
+
+**Testes e2e**
+```bash
+npm run test:e2e
+```
+
+**Cobertura de testes**
+```bash
+npm run test:cov
+```
+
+> O relatório de cobertura é gerado na pasta `coverage/` dentro do backend.
+
+---
+
+## 💭 Considerações
+
+A necessidade de trabalhar com ordenação de colunas e tasks, mantendo esse estado persistido no banco, trouxe novas formas de pensar sobre adaptabilidade e consistência de dados. Garantir que a ordem refletida na interface seja sempre a mesma após um recarregamento exigiu cuidado no design do schema e na lógica dos services de reordenação, indo além de um CRUD tradicional.
+
+Implementar o reorder seja em columns ou tasks, foi um exercício mental que me fez pensar além da simples persistência. Quando editamos a ordem de uma coluna ou task, as outras também mudam de lugar. Conseguir implementar essa lógica e ver funcionando foi muito recompensador.

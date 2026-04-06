@@ -1,12 +1,12 @@
 services:
   postgres:
-    image: postgres:16-alpine
-    container_name: kanban_db
-    restart: always
+    image: 
+    container_name: 
+    restart: 
     environment:
-      POSTGRES_USER: user_kanban
-      POSTGRES_PASSWORD: password_kanban
-      POSTGRES_DB: kanban_db
+      POSTGRES_USER: 
+      POSTGRES_PASSWORD: 
+      POSTGRES_DB: 
     ports:
       - "5432:5432"
     volumes:

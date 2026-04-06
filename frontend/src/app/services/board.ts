@@ -6,7 +6,7 @@ import { Board } from '../models/board.model';
   providedIn: 'root',
 })
 export class BoardService {
-  private apiUrl = 'https://valinor-2czm.onrender.com/boards';
+  private apiUrl = 'http://localhost:3000/boards';
   
   constructor(private http: HttpClient) {}
 

@@ -11,7 +11,9 @@ async function bootstrap() {
         transform: true,
     }));
     app.enableCors({
-        origin: 'http://localhost:4200',
+        origin: ['https://kanban-joao-marcelo.netlify.app',
+            'http://localhost:4200'
+        ]
     });
     await app.listen(3000);
 }

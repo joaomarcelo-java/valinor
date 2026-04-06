@@ -8,7 +8,7 @@ import { ReorderColumn } from '../models/column-reorder';
 })
 export class ColumnService {
   private apiUrl = (boardId: string) =>
-    `https://valinor-2czm.onrender.com/boards/${boardId}/columns`;
+    `http://localhost:3000/boards/${boardId}/columns`;
 
   constructor(private http: HttpClient) {}
 
